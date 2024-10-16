@@ -6,6 +6,7 @@ function rockPaperScissors(player1, player2) {
 
 
 
+//rockPaperSCissors('Rock','Scissors')
 
 
 
