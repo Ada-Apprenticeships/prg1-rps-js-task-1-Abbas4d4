@@ -46,21 +46,20 @@ console.log(rockPaperScissors('paper','rock'));
 */
 
 
-function check_winner(p1_pick,p2_pick) {
-  console.log(p1_pick,p2_pick)
+
+
+function rockPaperScissors(player1,player2) {
+   console.log(player1,player2)
 }
 
 player1_options = ['rock','paper','scissors']
 player2_options = ['rock','paper','scissors']
-index = 0
 
-for (let i = 0; i=8; i++){
-  check_winner(player1_options[index],player2_options[index] )
-  index += 1
+for (let x = 0; x < player1_options.length; x++){
+  for (let y = 0; y < player2_options.length; y++) {
+      rockPaperScissors(player1_options[x], player2_options[y]);
+  }
 }
-
-
-
 
 
 
