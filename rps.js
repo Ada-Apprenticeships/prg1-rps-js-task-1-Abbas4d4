@@ -15,11 +15,7 @@ function rockPaperScissors(player1,player2) {
   } 
   else 
   {
-    /*Player1_WinningCondition[player1].includes(player2) ?  return 'player1' :  return 'player2'*/
-    if(Player1_WinningCondition[player1].includes(player2))
-      return 'player1';
-    else
-      return 'player2';
+    return Player1_WinningCondition[player1].includes(player2) ?  'player1' :  'player2';  
  
   }
  
