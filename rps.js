@@ -11,23 +11,13 @@ function rockPaperScissors(player1,player2) {
 
   if (player1 === player2) 
   {
-      return 'draw'; 
+    return 'draw'; 
   } 
   else 
   {
     return Player1_WinningCondition[player1].includes(player2) ?  'player1' :  'player2';  
- 
+
   }
- 
-
- var players_options = ['rock','paper','scissors','lizard','spock']
-
- //loops through all combinations between players from given list(25)
- for (let x = 0; x <  players_options.length; x++){   
-   for (let y = 0; y <  players_options.length; y++) {
-      var result = rockPaperScissors(players_options[x], players_options[y]);
-   }
- }
 }
 
 
