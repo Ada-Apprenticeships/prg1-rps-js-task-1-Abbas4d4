@@ -4,7 +4,6 @@ function rockPaperScissors(player1,player2) {
   var Player1_WinningCondition = {
     'rock':['scissors','lizard'], 'paper':['rock','spock'], 'scissors':['paper','lizard'], 'lizard':['spock','paper'],'spock':['scissors','rock']
   }
-
   if (player1 === player2) {return 'draw'} 
   else if (Player1_WinningCondition[player1].includes(player2)) {return 'player1'} 
   else {return 'player2'};
