@@ -2,12 +2,26 @@ function rockPaperScissors(player1,player2) {
 
   //States which combinations result in player1 winning
   var Player1_WinningCondition = {
-    'rock':['scissors','lizard'], 'paper':['rock','spock'], 'scissors':['paper','lizard'], 'lizard':['spock','paper'],'spock':['scissors','rock']
+    'rock':['scissors','lizard'], 
+    'paper':['rock','spock'], 
+    'scissors':['paper','lizard'], 
+    'lizard':['spock','paper'],
+    'spock':['scissors','rock']
   }
-  if (player1 === player2) {return 'draw'} 
-  else if (Player1_WinningCondition[player1].includes(player2)) {return 'player1'} 
-  else {return 'player2'};
- }
+
+  if (player1 === player2) 
+  {
+      return 'draw'; 
+  } 
+  else 
+  {
+    /*Player1_WinningCondition[player1].includes(player2) ?  return 'player1' :  return 'player2'*/
+    if(Player1_WinningCondition[player1].includes(player2))
+      return 'player1';
+    else
+      return 'player2';
+ 
+  }
  
 
  var players_options = ['rock','paper','scissors','lizard','spock']
@@ -18,7 +32,7 @@ function rockPaperScissors(player1,player2) {
       var result = rockPaperScissors(players_options[x], players_options[y]);
    }
  }
-
+}
 
 
 
