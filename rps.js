@@ -1,7 +1,7 @@
 function rockPaperScissors(player1,player2) {
 
-  //States which combinations result in player1 winning
-  const Player1_WinningCondition = {
+  //Outlines winning hands for Player1 based on player2's hand
+  const Player1_WinningCircumstances = {
     rock:['scissors','lizard'], 
     paper:['rock','spock'], 
     scissors:['paper','lizard'], 
@@ -9,9 +9,11 @@ function rockPaperScissors(player1,player2) {
     spock:['scissors','rock']
   }
 
+  //Draw condition
   if (player1 === player2) return 'draw'
 
-  return Player1_WinningCondition[player1].includes(player2) ?  'player1' :  'player2';  
+  //Determines winner based on player hands
+  return Player1_WinningCircumstances[player1].includes(player2) ?  'player1' :  'player2';  
 
  
 }
