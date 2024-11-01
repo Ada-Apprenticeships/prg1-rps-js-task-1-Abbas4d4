@@ -12,7 +12,7 @@ function rockPaperScissors(player1,player2) {
   //Draw condition
   if (player1 === player2) return 'draw'
 
-  //Determines winner based on player hands
+  // Checks if Player 2's hand is in the list of hands Player 1 can beat. Determines winner.
   return Player1_WinningCircumstances[player1].includes(player2) ?  'player1' :  'player2';  
 
  
